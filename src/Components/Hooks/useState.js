@@ -1,4 +1,4 @@
-import React, {useState, useEff, useEffect} from "react";
+import React, {useState, useEffect} from "react";
 
 export default function UseStateNestedObject(){
     const [data, setData] = useState({hits: [
@@ -46,13 +46,13 @@ export default function UseStateNestedObject(){
       },[])      
     return (
         <div className="App">
-      {
-        data.hits.map((item)=>(
-          <li key={item.objectId}>
-            <a href={item.url}>{item.title}</a>
-          </li>
-        ))
-      }
-    </div>
+            {
+                data.hits.map((item)=>(
+                <li key={item.objectId}>
+                    <a href={item.url}>{item.title}</a>
+                </li>
+                ))
+            }
+        </div>
     );
 }
