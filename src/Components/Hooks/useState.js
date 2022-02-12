@@ -13,7 +13,9 @@ export default function UseStateNestedObject(){
                  fieldTwoTwo: "c"
                  }
               }
-         })
+         });
+
+         console.log("exapleState: ",exampleState);
       
       
       useEffect(()=>{
@@ -35,14 +37,17 @@ export default function UseStateNestedObject(){
         setExampleState((prevState)=>(
           {
            ...prevState,
-           fieldTwo: {
-             ...prevState.fieldTwo,
-             fieldTwoOne: "habib",
+           masterField: {
+             ...prevState.masterField,
+             fieldTwo:{
+              ...prevState.masterField.fieldTwo,
+              fieldTwoOne: "habib",
              fieldTwoThree: "Rofiq"
+             }
            }
           }
         ))
-      
+      console.log("effect: ",exampleState);
       },[])      
     return (
         <div className="App">
