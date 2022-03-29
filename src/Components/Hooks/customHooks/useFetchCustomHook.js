@@ -16,7 +16,16 @@
  *      When we have component logic that needs to be used by multiple components, we can extract that logic to a custom Hook.
  *      Custom Hooks start with "use". Example: useFetch.
  * 
+ * Custom Hook Use Cases....
+ *      useFetch
+ *      useEventListener
+ *      useLocalStorage
+ *      useMediaQuery
+ *      useDarkMode
  */
+
+
+// Use Fetch Custom Hook
 import useFetch from './useFetch';
 const CustomHook = () => {
     const [data] = useFetch("https://jsonplaceholder.typicode.com/todos");  //  JSONPlaceholder provides fetch fake data.
