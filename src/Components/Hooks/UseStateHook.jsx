@@ -17,7 +17,7 @@
 
 import React, {useState, useEffect} from "react";
 
-export default function UseStateNestedObject(){
+export default function UseStateHook(){
     const [data, setData] = useState({hits: [
         {objectId: 1, url: "hi moklu", title: "its's title"}
       ]});
