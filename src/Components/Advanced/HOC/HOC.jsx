@@ -6,11 +6,15 @@
 
 import Albums from "./albums";
 import Comments from "./comments";
+import useHocCustomHook from "./HOC_CustomHook";
 
 const HOC = ()=>{
+    const [dta, setDta] = useHocCustomHook(["https://jsonplaceholder.typicode.com/comments", "comment", 10])
+    console.log(dta);
     return (
         <>
-            <Comments />
+            {/* <Comments /> */}
+            {/* <HocCustomHook props={{url : "https://jsonplaceholder.typicode.com/comments", hookName : "comment", requiredItems : 20}} /> */}
             <Albums />
         </>
     )
