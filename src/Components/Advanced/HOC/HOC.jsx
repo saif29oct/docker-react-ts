@@ -24,17 +24,19 @@ const HOC = (wrappedComponent, url)=>{
         }
         render(){
             let [term, data] = this.state;
-            <>
-                <h1>Filter Albums</h1>
-                <input></input>
-                <ul>
-                    {
-                        term.map((album)=>{
-                            return <li key={album.id}>{album.title}</li>
-                        })
-                    }
-                </ul>
-            </>
+            return(
+                <>
+                    <h1>Filter Albums</h1>
+                    <input></input>
+                    <ul>
+                        {
+                            term.map((album)=>{
+                                return <li key={album.id}>{album.title}</li>
+                            })
+                        }
+                    </ul>
+                </>
+            )
         };
     }
 }
