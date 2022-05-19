@@ -3,18 +3,13 @@
  * useReducer(<reducer>, <initialState>)
  * 
  * Note:
- *  React guarantees that dispatch function identity is stable and won’t change on re-renders. This is why it’s safe to omit 
- *  from the useEffect or useCallback dependency list.
+ *  React guarantees that dispatch function identity is stable and won’t change on re-renders. This is why it’s safe to omit from the useEffect or useCallback dependency list.
  * 
  * Lazy initialization:
- *      You can also create the initial state lazily. To do this, you can pass an init function as the third argument. 
- *      The initial state will be set to init(initialArg).
- *      It lets you extract the logic for calculating the initial state outside the reducer. This is also handy for 
- *      resetting the state later in response to an action:
+ *      You can also create the initial state lazily. To do this, you can pass an init function as the third argument. The initial state will be set to init(initialArg). It lets you extract the logic for calculating the initial state outside the reducer. This is also handy for resetting the state later in response to an action:
  * 
  * Bailing out of a dispatch:
- *  If you return the same value from a Reducer Hook as the current state, React will bail out without rendering the children or 
- *  firing effects. (React uses the Object.is comparison algorithm.)
+ *  If you return the same value from a Reducer Hook as the current state, React will bail out without rendering the children or firing effects. (React uses the Object.is comparison algorithm.)
  */
 
 // Implementing a Counter with Reducer and Context hook 

@@ -8,9 +8,7 @@
  * By default, effects run after every completed render, but you can choose to fire them only when certain values have changed.
  * 
  * Timing of effects
- *      Unlike componentDidMount and componentDidUpdate, the function passed to useEffect fires after layout and paint, 
- *      during a deferred event. This makes it suitable for the many common side effects, like setting up subscriptions and event handlers, 
- *      because most types of work shouldn’t block the browser from updating the screen.
+ *      Unlike componentDidMount and componentDidUpdate, the function passed to useEffect fires after layout and paint, during a deferred event. This makes it suitable for the many common side effects, like setting up subscriptions and event handlers, because most types of work shouldn’t block the browser from updating the screen.
  * 
  * Note: 
  *  While passing [] as the second argument is closer to the familiar componentDidMount and componentWillUnmount mental model, 

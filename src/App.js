@@ -5,16 +5,20 @@ import ContextTest from "./Components/Hooks/contextHook/parent"
 import SampleUseReducer from "./Components/Hooks/useReducerHook/mainReducer";
 import UseCallbackHook from "./Components/Hooks/useCallbackHook/UseCallbackHook";
 import HOC from "./Components/Advanced/HOC/HOC";
+import Q21 from './Components/TuringTests/Q21'
+import StateExperiment from "./Components/classComponents/stateExperiment";
 
 function App() {
   return (
-    // <UseStateNestedObject />
+    // <UseStateHook />
     // <TestComponent />
     // <CustomHook />
     // <ContextTest />
     // <SampleUseReducer />
     // <UseCallbackHook />
-    <HOC />
+    // <HOC />
+    // <Q21 />
+    <StateExperiment increment={3} />
   )
 }
 

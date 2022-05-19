@@ -5,6 +5,8 @@
  *      2. Hooks can only be called at the top level of a component.
  *      3. Hooks cannot be conditional
  * 
+ * The size of the bundle is larger when we use hooks as compared to classes
+ * 
  * Note: Hooks will not work in React class components.
  * 
  * You cannot call Hooks from regular JavaScript functions. Instead, you can call Hooks from React function components.
