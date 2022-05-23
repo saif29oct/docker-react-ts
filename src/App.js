@@ -7,18 +7,11 @@ import UseCallbackHook from "./Components/Hooks/useCallbackHook/UseCallbackHook"
 import HOC from "./Components/Advanced/HOC/HOC";
 import Q21 from './Components/TuringTests/Q21'
 import StateExperiment from "./Components/classComponents/stateExperiment";
+import Login from './Components/login'
 
 function App() {
   return (
-    // <UseStateHook />
-    // <TestComponent />
-    // <CustomHook />
-    // <ContextTest />
-    // <SampleUseReducer />
-    // <UseCallbackHook />
-    // <HOC />
-    // <Q21 />
-    <StateExperiment increment={3} />
+    <Login />
   )
 }
 

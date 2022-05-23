@@ -11,7 +11,7 @@
  *      Unlike componentDidMount and componentDidUpdate, the function passed to useEffect fires after layout and paint, during a deferred event. This makes it suitable for the many common side effects, like setting up subscriptions and event handlers, because most types of work shouldn’t block the browser from updating the screen.
  * 
  * Note: 
- *  While passing [] as the second argument is closer to the familiar componentDidMount and componentWillUnmount mental model, 
+ *  While passing [] as the second argument is closer to the familiar componentDidMount and componentDidUpdate and componentWillUnmount mental model, 
  *  there are usually better solutions to avoid re-running effects too often.
  * 
  * Note: 

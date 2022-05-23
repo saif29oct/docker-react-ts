@@ -5,8 +5,6 @@ export class StateExperiment extends Component {
         count: 5
     }
 
-
-
   render() {
     return (
         <>
