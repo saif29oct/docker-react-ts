@@ -7,6 +7,7 @@ import UseCallbackHook from "./Components/Hooks/useCallbackHook/UseCallbackHook"
 import HOC from "./Components/Advanced/HOC/HOC";
 import Q21 from './Components/TuringTests/Q21'
 import StateExperiment from "./Components/classComponents/stateExperiment";
+import ReactMemo from "./Components/apiReferenc/ReactMemo";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
     // <UseCallbackHook />
     // <HOC />
     // <Q21 />
-    <StateExperiment increment={3} />
+    // <StateExperiment increment={3} />
+    <ReactMemo />
   )
 }
 
