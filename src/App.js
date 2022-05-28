@@ -11,12 +11,20 @@ import Login from './Components/login'
 import CustomHookToCalculateWindowSize from "./Components/TuringTests/customHookToCalculateWindowSize";
 import LazyStateInitialization from "./Components/Advanced/performanceTechniques/lazyStateInitialization";
 import GetMousePosition from "./Components/TuringTests/MousePosition/getMousePosition";
+import ReactMemo from "./Components/apiReferenc/ReactMemo";
 
 function App() {
   return (
-    // <CustomHookToCalculateWindowSize />
-    // <LazyStateInitialization />
-    <GetMousePosition />
+    // <UseStateHook />
+    // <TestComponent />
+    // <CustomHook />
+    // <ContextTest />
+    // <SampleUseReducer />
+    // <UseCallbackHook />
+    // <HOC />
+    // <Q21 />
+    // <StateExperiment increment={3} />
+    <ReactMemo />
   )
 }
 
