@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
-function customHookToCalculateWindowSize() {
+function CustomHookToCalculateWindowSize() {
+  useEffect(()=>{
+    window.addEventListener('resize', e=>(console.log(e.target.innerWidth)))
+  },[])
   return (
     <div>customHookToCalculateWindowSize</div>
   )
 }
 
-export default customHookToCalculateWindowSize
+export default CustomHookToCalculateWindowSize

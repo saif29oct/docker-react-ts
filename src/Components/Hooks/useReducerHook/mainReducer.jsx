@@ -1,5 +1,5 @@
 /**
- *  useReducer
+ * useReducer
  * useReducer(<reducer>, <initialState>)
  * 
  * Note:

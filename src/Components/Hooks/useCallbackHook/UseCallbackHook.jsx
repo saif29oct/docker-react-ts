@@ -5,7 +5,7 @@
  *      -- This is useful when passing callbacks to optimized child components that rely on reference equality to prevent unnecessary renders (e.g. shouldComponentUpdate).
  *      -- useCallback(fn, deps) is equivalent to useMemo(() => fn, deps).
  *  Note
- *     --The array of dependencies is not passed as arguments to the callback. Conceptually, though, that’s what they represent: every value referenced inside the callback should also appear in the dependencies array.
+ *     -- The array of dependencies is not passed as arguments to the callback. Conceptually, though, that’s what they represent: every value referenced inside the callback should also appear in the dependencies array.
  */
 
 import { useState, useCallback } from "react";

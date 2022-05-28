@@ -8,10 +8,15 @@ import HOC from "./Components/Advanced/HOC/HOC";
 import Q21 from './Components/TuringTests/Q21'
 import StateExperiment from "./Components/classComponents/stateExperiment";
 import Login from './Components/login'
+import CustomHookToCalculateWindowSize from "./Components/TuringTests/customHookToCalculateWindowSize";
+import LazyStateInitialization from "./Components/Advanced/performanceTechniques/lazyStateInitialization";
+import GetMousePosition from "./Components/TuringTests/MousePosition/getMousePosition";
 
 function App() {
   return (
-    <Login />
+    // <CustomHookToCalculateWindowSize />
+    // <LazyStateInitialization />
+    <GetMousePosition />
   )
 }
 
