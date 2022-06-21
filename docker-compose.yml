@@ -8,3 +8,10 @@ services:
       - .:/app
     stdin_open: true
     tty: true
+  server:
+    container_name: phpapache
+    build: ./bin/php814
+    ports:
+      - 80:08
+    volumes:
+      - .:/var/www/html

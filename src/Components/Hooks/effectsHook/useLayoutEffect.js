@@ -7,7 +7,6 @@
  * 
  * Note: Hooks will not work in React class components.
  * 
- * 
  * You cannot call Hooks from regular JavaScript functions. Instead, you can call Hooks from React function components.
  * Hooks can also be called from custom Hooks.
  * Don’t call Hooks inside loops, conditions, or nested functions
@@ -26,7 +25,7 @@
  * How useEffect Works:
  *  --step-1: user action 
  *  --step-2: react update the states
- *  --step-3: React handle the DOM mutation
+ *  --step-3: React handle the DOM mutation (Changes being made to the DOM tree)
  *  --step-4: useLayoutEffect function fired
  *  --step-5: browser paints this DOM changes to the browser's screen 
  */
