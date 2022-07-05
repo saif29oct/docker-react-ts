@@ -10,11 +10,11 @@ function App() {
   return (
     // <UseStateNestedObject />
     // <TestComponent />
-    // <CustomHook />
+    <CustomHook />
     // <ContextTest />
     // <SampleUseReducer />
     // <UseCallbackHook />
-    <HOC />
+    // <HOC />
   )
 }
 

@@ -28,13 +28,15 @@
 // Use Fetch Custom Hook
 import useFetch from './useFetch';
 const CustomHook = () => {
-    const [data] = useFetch("https://jsonplaceholder.typicode.com/todos");  //  JSONPlaceholder provides fetch fake data.
+    // const [data] = useFetch("https://jsonplaceholder.typicode.com/todos");  //  JSONPlaceholder provides fetch fake data.
+    const [data] = useFetch('https://api.foursquare.com/v3/autocomplete?query=food&ll=23.711044%2C90.382840&radius=3000&cagetories=13065');  //  JSONPlaceholder provides fetch fake data.
+    console.log('data: ',data);
     return(
         <div>
             {
-                data && data.map((item)=>{
-                    return <p key={item.id}>{item.title}</p>;
-                })
+                // data && data.map((item)=>{
+                //     return <p key={item.id}>{item.title}</p>;
+                // })
             }
         </div>
     );
