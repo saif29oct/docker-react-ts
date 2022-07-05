@@ -7,11 +7,15 @@
  * 
  * Note: Hooks will not work in React class components.
  * 
+ * Unlike the setState method found in class components, useState does not automatically merge update objects.
  * 
  * You cannot call Hooks from regular JavaScript functions. Instead, you can call Hooks from React function components.
  * Hooks can also be called from custom Hooks.
  * Don’t call Hooks inside loops, conditions, or nested functions
  * You can't use a hook inside another hook
+ * 
+ * Store function with the useState Hook
+ *    React offers a way to to lazily initialise a state hook, ensuring that it only happens once. You do this by passing an argument-less function to useState which returns the initial value.
  * 
  */
 

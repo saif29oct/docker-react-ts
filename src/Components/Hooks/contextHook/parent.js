@@ -1,6 +1,7 @@
 /**
  * useContext:
  *  const value = useContext(MyContext);
+ * 
  *  useContext is a hook that provides a way to pass data through the component tree without manually 
  *  passing props down through each nested component.
  * 
@@ -24,7 +25,9 @@
 
 import Child1 from "./child1";
 import { createContext, useState } from "react"
-export const counterProvider = createContext(0);
+
+export const counterProvider = createContext(0);    // Context provides a way to pass data through the component tree without having to pass props down manually at every level.
+
 const ContextTest = ()=>{
     const [count, setCount] = useState(0);
     return (
