@@ -1,6 +1,6 @@
 services:
   web:
-    container_name: reacteweb
+    container_name: rt-web
     build: ./bin/node16142
     ports:
       - 3002:3000
@@ -8,10 +8,3 @@ services:
       - .:/app
     stdin_open: true
     tty: true
-  server:
-    container_name: phpapache
-    build: ./bin/php814
-    ports:
-      - 80:08
-    volumes:
-      - .:/var/www/html
