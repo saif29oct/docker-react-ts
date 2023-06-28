@@ -16,6 +16,6 @@
       - Example: `d-npm install` can be used instead of `docker exec react-ts npm install`
 
 ## Tips
-- To initialize docker-react-ts for an existing react project 
+- To initialize docker-react-ts for an existing React project 
   - step-1: follow installation steps 1-2
-  - step-2: fix the `APP_DIR` path
+    - step-2: fix the `APP_DIR` path in `.env` file
