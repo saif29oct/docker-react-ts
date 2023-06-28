@@ -5,13 +5,14 @@ services:
       context: ./
       dockerfile: Dockerfile
     image: react-ts
+    container_name: react-ts
     extra_hosts:
       - 'host.docker.internal:host-gateway'
     ports:
       - '${APP_PORT:-3000}:3000'
       - '${VITE_PORT:-5173}:${VITE_PORT:-5173}'
     volumes:
-      - /home/saif/projects/games-ui:/app
+      - '${APP_DIR:-~/app}:/app'
     command: bash /app/start-react.sh
     networks:
       - react-network

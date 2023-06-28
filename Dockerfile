@@ -4,12 +4,12 @@ LABEL maintainer="Saiful Islam"
 
 ENV DEBIAN_FRONTEND noninteractive
 
+WORKDIR /app
+
 RUN apt-get update \
     && npm install -g npm@latest
 
 #RUN npm create vite@latest app --template react-ts
-
-WORKDIR /app
 
 #RUN npm install
 
